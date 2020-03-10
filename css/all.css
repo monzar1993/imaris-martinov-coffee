@@ -181,7 +181,8 @@ h5 {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 1650px; }
+  width: 1650px;
+  height: 100%; }
 
 /****************************************************************              PC              ***************************************************/
 @media (min-width: 1025px) and (max-width: 1650px) {
@@ -210,12 +211,21 @@ h2 {
   margin-bottom: 50px;
   line-height: 75px; }
 
+h3 {
+  margin-bottom: 50px;
+  line-height: 63px; }
+
 p,
 span,
 li {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #000; }
+
+p {
+  margin-bottom: 3rem;
+  font-size: 16px;
+  line-height: 26px; }
 
 img {
   width: 100%;
@@ -224,10 +234,12 @@ img {
 
 section {
   height: calc(100vh - 100px);
-  margin-top: 100px; }
+  margin-top: 100px;
+  position: relative; }
 
 .row {
-  display: flex; }
+  display: flex;
+  height: 100%; }
   @media screen and (max-width: 768px) {
     .row {
       flex-direction: column; } }
@@ -252,22 +264,25 @@ header {
   display: block;
   position: relative; }
 
-.main .main-section .dots {
+.main .dots {
   position: absolute;
   width: 20vw; }
-  .main .main-section .dots-1 {
+  .main .dots-1 {
     left: 0;
     top: 20%; }
-  .main .main-section .dots-2 {
+  .main .dots-2 {
     right: -20%;
     top: 50%;
     transform: translateY(-50%); }
-  .main .main-section .dots-3 {
+  .main .dots-3 {
     left: 55%;
-    bottom: -10%;
+    bottom: 5%;
     transform: translateX(-50%);
     opacity: 0.5;
     width: 26vw; }
+  .main .dots-4 {
+    right: 0;
+    top: 10%; }
 .main .main-section .promo {
   font-size: 24px;
   line-height: 39px;
@@ -324,5 +339,18 @@ header {
     .main .main-section .main-slider .play-btn:hover {
       box-shadow: 0px 0px 30px 4px rgba(38, 10, 0, 0.3);
       transform: translateY(-50%) scale(1.1); }
+.main .about-us .about-us-coffee {
+  position: relative;
+  width: 60%; }
+  .main .about-us .about-us-coffee::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #d5b584;
+    width: 167%;
+    height: 135%;
+    z-index: -1; }
 
 /*# sourceMappingURL=all.css.map */
