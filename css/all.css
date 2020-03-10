@@ -283,6 +283,8 @@ header {
   .main .dots-4 {
     right: 0;
     top: 10%; }
+.main .text-center {
+  text-align: center; }
 .main .main-section .promo {
   font-size: 24px;
   line-height: 39px;
@@ -339,6 +341,18 @@ header {
     .main .main-section .main-slider .play-btn:hover {
       box-shadow: 0px 0px 30px 4px rgba(38, 10, 0, 0.3);
       transform: translateY(-50%) scale(1.1); }
+.main .about-us h3 {
+  position: relative;
+  margin-left: 10px; }
+  .main .about-us h3::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-45%);
+    height: 41px;
+    width: 4px;
+    background: #D5B584; }
 .main .about-us .about-us-coffee {
   position: relative;
   width: 60%; }
@@ -352,5 +366,62 @@ header {
     width: 167%;
     height: 135%;
     z-index: -1; }
+  .main .about-us .about-us-coffee .cakes,
+  .main .about-us .about-us-coffee .coffee {
+    position: absolute;
+    text-transform: uppercase;
+    left: -30%;
+    top: -20%;
+    z-index: 1;
+    line-height: 141px;
+    letter-spacing: 0.2em;
+    color: #EFDABA; }
+  .main .about-us .about-us-coffee .coffee {
+    left: unset;
+    top: unset;
+    right: -35%;
+    bottom: -20%; }
+.main .about-us .read-more {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #000;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  border: 2px solid #000;
+  width: 200px;
+  padding: 10px 20px; }
+  .main .about-us .read-more .arrow {
+    width: 45px; }
+  .main .about-us .read-more::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    background: #D5B584;
+    width: 0px;
+    height: 2px;
+    transition: 0.5s; }
+  .main .about-us .read-more::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+    background: #D5B584;
+    width: 2px;
+    height: 0px;
+    transition: 0.5s; }
+  .main .about-us .read-more:hover:after {
+    width: 100px; }
+  .main .about-us .read-more:hover:before {
+    height: 65px; }
+.main .our-instagram .insta-images {
+  display: flex;
+  justify-content: space-between; }
+  .main .our-instagram .insta-images .insta-img-holder {
+    margin: 0px 14px; }
 
 /*# sourceMappingURL=all.css.map */
