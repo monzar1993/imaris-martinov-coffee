@@ -1,5 +1,25 @@
 .main {
     .main-section {
+        .dots {
+            position: absolute;
+            width: 20vw;
+            &-1 {
+                left: 0;
+                top: 20%;
+            }
+            &-2 {
+                right: -20%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &-3 {
+                left: 55%;
+                bottom: -10%;
+                transform: translateX(-50%);
+                opacity: 0.5;
+                width: 26vw;
+            }
+        }
         .promo {
             font-size: 24px;
             line-height: 39px;
@@ -32,6 +52,37 @@
                 .content-p {
                     font-size: 18px;
                     line-height: 30px;
+                }
+            }
+        }
+        .main-slider {
+            position: relative;
+            .play-btn {
+                position: absolute;
+                top: 50%;
+                left: -45px;
+                transform: translateY(-50%);
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                background: #fff;
+                box-shadow: 0px 0px 30px rgba(38, 10, 0, 0.3);
+                cursor: pointer;
+                transition: 0.5s;
+                .arrow-right {
+                    width: 0;
+                    height: 0;
+                    border-top: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    border-left: 25px solid #000;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-35%, -50%);
+                }
+                &:hover {
+                    box-shadow: 0px 0px 30px 4px rgba(38, 10, 0, 0.3);
+                    transform: translateY(-50%) scale(1.1);
                 }
             }
         }

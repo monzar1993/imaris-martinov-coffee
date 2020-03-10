@@ -21,6 +21,8 @@ li {
 }
 
 img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -37,6 +39,8 @@ section {
     .col {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        position: relative;
         padding: 0px 50px;
         &-7 {
             width: calc(60% - 100px);
