@@ -1,5 +1,55 @@
 @import "global/reset.scss";
 @import "global/var.scss";
 @import "global/mixins.scss";
+h1,
+h2,
+h3,
+h4,
+h5 {
+    @include headings;
+}
+
+h2 {
+    margin-bottom: 50px;
+    line-height: 75px;
+}
+
+p,
+span,
+li {
+    @include text;
+}
+
+img {
+    object-fit: cover;
+}
+
+section {
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 50px;
+        &-7 {
+            width: calc(60% - 100px);
+        }
+        &-5 {
+            width: calc(40% - 100px);
+        }
+        @media screen and (max-width: 768px) {
+            width: calc(100% - 100px);
+        }
+    }
+}
 
 @import "partials/header.scss";
+@import "partials/main.scss";
+@import "partials/footer.scss";

@@ -1,0 +1,39 @@
+.main {
+    .main-section {
+        .promo {
+            font-size: 24px;
+            line-height: 39px;
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 40px;
+            &::before {
+                content: "+";
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 48px;
+                color: $gold-color;
+            }
+        }
+        .find-us {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+            .contact-block {
+                max-width: 275px;
+                .contact-p {
+                    text-transform: uppercase;
+                    color: $gold-color;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 7px;
+                }
+                .content-p {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

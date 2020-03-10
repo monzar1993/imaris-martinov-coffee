@@ -1,5 +1,11 @@
 @mixin headings {
-    font-family: $text-font;
+    font-family: $headings-font;
     font-weight: 700;
-    color: #fff;
+    color: $heading-color;
+}
+
+@mixin text {
+    font-family: $text-font;
+    font-weight: $base-font-weight;
+    color: $text-color;
 }
