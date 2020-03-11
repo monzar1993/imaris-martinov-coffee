@@ -26,9 +26,25 @@
     .text-center {
         text-align: center;
     }
+    .align-center {
+        align-items: center;
+    }
+    .mb-0 {
+        margin-bottom: 0;
+    }
+    .mb-2 {
+        margin-bottom: 2rem;
+    }
+    .bold {
+        font-weight: 700;
+    }
+    .mx-auto {
+        margin: 0 auto;
+    }
     .read-more {
         display: flex;
         align-items: center;
+        justify-content: center;
         position: relative;
         color: $text-color;
         font-family: $headings-font;
@@ -211,6 +227,93 @@
                     margin-left: 40px;
                 }
             }
+        }
+    }
+    .new-positions {
+        .new-pos-images {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .new-pos-img-holder {
+                margin: 0px 14px;
+                .new-pos-description {
+                    .cake {
+                        &-name {
+                            font-size: 22px;
+                            line-height: 34px;
+                            font-family: $headings-font;
+                            font-weight: 700;
+                        }
+                        &-price {
+                            font-size: 22px;
+                            line-height: 51px;
+                            color: $gold-color;
+                            font-family: $headings-font;
+                            font-weight: 700;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                bottom: -10px;
+                                left: 50%;
+                                height: 2px;
+                                width: 155px;
+                                background-image: url(../images/gold-line.png);
+                                transform: translateX(-50%);
+                            }
+                            .price {
+                                font-size: 36px;
+                                line-height: 51px;
+                                color: $gold-color;
+                                font-family: $headings-font;
+                                font-weight: 700;
+                                margin-right: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .read-more {
+            width: 330px;
+            .arrow {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .new-guest {
+        .bordered {
+            border: 1px solid #260A00;
+            padding: 2rem 1rem;
+        }
+        .new-guest-img {
+            position: relative;
+            width: 22vw;
+            .discount {
+                position: absolute;
+                width: 7vw;
+                height: 7vw;
+                bottom: 0;
+                left: 0;
+                border-radius: 50%;
+                background: $gold-color;
+                @include flex-center;
+                font-size: 72px;
+                line-height: 84px;
+                font-family: $headings-font;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+        .new-guest-text {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .timer {
+            font-size: 72px;
+            line-height: 101px;
+            font-family: $headings-font;
+            color: $gold-color;
         }
     }
 }

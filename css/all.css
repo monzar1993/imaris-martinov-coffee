@@ -285,9 +285,20 @@ header {
     top: 10%; }
 .main .text-center {
   text-align: center; }
+.main .align-center {
+  align-items: center; }
+.main .mb-0 {
+  margin-bottom: 0; }
+.main .mb-2 {
+  margin-bottom: 2rem; }
+.main .bold {
+  font-weight: 700; }
+.main .mx-auto {
+  margin: 0 auto; }
 .main .read-more {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   color: #000;
   font-family: "Roboto Mono", monospace;
@@ -436,5 +447,73 @@ header {
       margin-bottom: 0; }
     .main .our-instagram .insta-images .our-insta .read-more {
       margin-left: 40px; }
+.main .new-positions .new-pos-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px; }
+  .main .new-positions .new-pos-images .new-pos-img-holder {
+    margin: 0px 14px; }
+    .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-name {
+      font-size: 22px;
+      line-height: 34px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 700; }
+    .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price {
+      font-size: 22px;
+      line-height: 51px;
+      color: #D5B584;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 700;
+      position: relative; }
+      .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        height: 2px;
+        width: 155px;
+        background-image: url(../images/gold-line.png);
+        transform: translateX(-50%); }
+      .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price .price {
+        font-size: 36px;
+        line-height: 51px;
+        color: #D5B584;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 700;
+        margin-right: 1rem; }
+.main .new-positions .read-more {
+  width: 330px; }
+  .main .new-positions .read-more .arrow {
+    margin-left: 1rem; }
+.main .new-guest .bordered {
+  border: 1px solid #260A00;
+  padding: 2rem 1rem; }
+.main .new-guest .new-guest-img {
+  position: relative;
+  width: 22vw; }
+  .main .new-guest .new-guest-img .discount {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #D5B584;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    line-height: 84px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    color: #fff; }
+.main .new-guest .new-guest-text {
+  font-size: 18px;
+  line-height: 30px; }
+.main .new-guest .timer {
+  font-size: 72px;
+  line-height: 101px;
+  font-family: "Roboto Mono", monospace;
+  color: #D5B584; }
 
 /*# sourceMappingURL=all.css.map */
