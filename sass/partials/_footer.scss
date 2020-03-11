@@ -1,0 +1,43 @@
+footer {
+    background: url(../images/footer-line.png) no-repeat top;
+    .site-map {
+        display: flex;
+        flex-direction: column;
+        max-width: 240px;
+        a {
+            font-family: $headings-font;
+            color: $heading-color;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 14px;
+            &:hover {
+                color: $gold-color;
+            }
+        }
+        span {
+            font-family: $headings-font;
+            color: $heading-color;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .phone-number {
+            margin-bottom: 10px;
+        }
+        .instagram-link {
+            margin-right: 10px;
+        }
+    }
+    .certifed {
+        font-size: 16px;
+        line-height: 23px;
+        font-family: $headings-font;
+        &.commercial {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .imaris-logo {
+        width: 30%;
+        object-fit: contain;
+    }
+}
