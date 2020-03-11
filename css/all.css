@@ -264,256 +264,412 @@ header {
   display: block;
   position: relative; }
 
-.main .dots {
-  position: absolute;
-  width: 20vw; }
-  .main .dots-1 {
-    left: 0;
-    top: 20%; }
-  .main .dots-2 {
-    right: -20%;
-    top: 50%;
-    transform: translateY(-50%); }
-  .main .dots-3 {
-    left: 55%;
-    bottom: 5%;
-    transform: translateX(-50%);
-    opacity: 0.5;
-    width: 26vw; }
-  .main .dots-4 {
-    right: 0;
-    top: 10%; }
-.main .text-center {
-  text-align: center; }
-.main .align-center {
-  align-items: center; }
-.main .mb-0 {
-  margin-bottom: 0; }
-.main .mb-2 {
-  margin-bottom: 2rem; }
-.main .bold {
-  font-weight: 700; }
-.main .mx-auto {
-  margin: 0 auto; }
-.main .read-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  color: #000;
-  font-family: "Roboto Mono", monospace;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.1em;
-  border: 2px solid #000;
-  width: 200px;
-  height: 45px;
-  padding: 10px 20px; }
-  .main .read-more .arrow {
-    width: 45px; }
-  .main .read-more::after {
-    content: "";
+.main {
+  overflow: hidden; }
+  .main .dots {
     position: absolute;
-    bottom: -10px;
-    right: 0;
-    background: #D5B584;
-    width: 0px;
-    height: 2px;
-    transition: 0.5s; }
-  .main .read-more::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    right: -10px;
-    background: #D5B584;
-    width: 2px;
-    height: 0px;
-    transition: 0.5s; }
-  .main .read-more:hover:after {
-    width: 100px; }
-  .main .read-more:hover:before {
-    height: 65px; }
-.main .main-section .promo {
-  font-size: 24px;
-  line-height: 39px;
-  position: relative;
-  margin-bottom: 40px;
-  padding-left: 40px; }
-  .main .main-section .promo::before {
-    content: "+";
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 48px;
-    color: #D5B584; }
-.main .main-section .find-us {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 70px; }
-  .main .main-section .find-us .contact-block {
-    max-width: 275px; }
-    .main .main-section .find-us .contact-block .contact-p {
-      text-transform: uppercase;
-      color: #D5B584;
-      font-size: 18px;
-      line-height: 25px;
-      margin-bottom: 7px; }
-    .main .main-section .find-us .contact-block .content-p {
-      font-size: 18px;
-      line-height: 30px; }
-.main .main-section .main-slider {
-  position: relative; }
-  .main .main-section .main-slider .play-btn {
-    position: absolute;
-    top: 50%;
-    left: -45px;
-    transform: translateY(-50%);
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(38, 10, 0, 0.3);
-    cursor: pointer;
-    transition: 0.5s; }
-    .main .main-section .main-slider .play-btn .arrow-right {
-      width: 0;
-      height: 0;
-      border-top: 15px solid transparent;
-      border-bottom: 15px solid transparent;
-      border-left: 25px solid #000;
+    width: 20vw; }
+    .main .dots-1 {
+      left: 0;
+      top: 20%; }
+    .main .dots-2 {
+      right: -20%;
+      top: 50%;
+      transform: translateY(-50%); }
+    .main .dots-3 {
+      left: 55%;
+      bottom: 5%;
+      transform: translateX(-50%);
+      opacity: 0.5;
+      width: 26vw; }
+    .main .dots-4 {
+      right: 0;
+      top: 10%; }
+    .main .dots-5 {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .main .dots-6 {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .main .dots-7 {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .main .text-center {
+    text-align: center; }
+  .main .align-center {
+    align-items: center; }
+  .main .white {
+    color: #fff; }
+  .main .mb-0 {
+    margin-bottom: 0; }
+  .main .mb-1 {
+    margin-bottom: 1rem; }
+  .main .mb-2 {
+    margin-bottom: 2rem; }
+  .main .bold {
+    font-weight: 700; }
+  .main .mx-auto {
+    margin: 0 auto; }
+  .main .read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #000;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    border: 2px solid #000;
+    width: 200px;
+    height: 45px;
+    padding: 10px 20px; }
+    .main .read-more .arrow {
+      width: 45px; }
+    .main .read-more::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      background: #D5B584;
+      width: 0px;
+      height: 2px;
+      transition: 0.5s; }
+    .main .read-more::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      right: -10px;
+      background: #D5B584;
+      width: 2px;
+      height: 0px;
+      transition: 0.5s; }
+    .main .read-more:hover:after {
+      width: 50%; }
+    .main .read-more:hover:before {
+      height: 100%; }
+  .main .main-section .promo {
+    font-size: 24px;
+    line-height: 39px;
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px; }
+    .main .main-section .promo::before {
+      content: "+";
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 48px;
+      color: #D5B584; }
+  .main .main-section .find-us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px; }
+    .main .main-section .find-us .contact-block {
+      max-width: 275px; }
+      .main .main-section .find-us .contact-block .contact-p {
+        text-transform: uppercase;
+        color: #D5B584;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 7px; }
+      .main .main-section .find-us .contact-block .content-p {
+        font-size: 18px;
+        line-height: 30px; }
+  .main .main-section .main-slider {
+    position: relative; }
+    .main .main-section .main-slider .play-btn {
+      position: absolute;
+      top: 50%;
+      left: -45px;
+      transform: translateY(-50%);
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(38, 10, 0, 0.3);
+      cursor: pointer;
+      transition: 0.5s; }
+      .main .main-section .main-slider .play-btn .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 25px solid #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%, -50%); }
+      .main .main-section .main-slider .play-btn:hover {
+        box-shadow: 0px 0px 30px 4px rgba(38, 10, 0, 0.3);
+        transform: translateY(-50%) scale(1.1); }
+  .main .about-us h3 {
+    position: relative;
+    margin-left: 10px; }
+    .main .about-us h3::after {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-45%);
+      height: 41px;
+      width: 4px;
+      background: #D5B584; }
+  .main .about-us .about-us-coffee {
+    position: relative;
+    width: 60%; }
+    .main .about-us .about-us-coffee::after {
+      content: "";
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-35%, -50%); }
-    .main .main-section .main-slider .play-btn:hover {
-      box-shadow: 0px 0px 30px 4px rgba(38, 10, 0, 0.3);
-      transform: translateY(-50%) scale(1.1); }
-.main .about-us h3 {
-  position: relative;
-  margin-left: 10px; }
-  .main .about-us h3::after {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translateY(-45%);
-    height: 41px;
-    width: 4px;
-    background: #D5B584; }
-.main .about-us .about-us-coffee {
-  position: relative;
-  width: 60%; }
-  .main .about-us .about-us-coffee::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #d5b584;
-    width: 167%;
-    height: 135%;
-    z-index: -1; }
-  .main .about-us .about-us-coffee .cakes,
-  .main .about-us .about-us-coffee .coffee {
-    position: absolute;
-    text-transform: uppercase;
-    left: -30%;
-    top: -20%;
-    z-index: 1;
-    line-height: 141px;
-    letter-spacing: 0.2em;
-    color: #efdaba; }
-  .main .about-us .about-us-coffee .coffee {
-    left: unset;
-    top: unset;
-    right: -35%;
-    bottom: -20%; }
-.main .our-instagram .insta-images {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px; }
-  .main .our-instagram .insta-images .insta-img-holder {
-    margin: 0px 14px; }
-  .main .our-instagram .insta-images .side {
-    width: 25%;
-    background: #260a00;
-    height: 90px; }
-  .main .our-instagram .insta-images .our-insta {
+      transform: translate(-50%, -50%);
+      background: #D5B584;
+      width: 167%;
+      height: 135%;
+      z-index: -1; }
+    .main .about-us .about-us-coffee .cakes,
+    .main .about-us .about-us-coffee .coffee {
+      position: absolute;
+      text-transform: uppercase;
+      left: -30%;
+      top: -20%;
+      z-index: 1;
+      line-height: 141px;
+      letter-spacing: 0.2em;
+      color: #efdaba; }
+    .main .about-us .about-us-coffee .coffee {
+      left: unset;
+      top: unset;
+      right: -35%;
+      bottom: -20%; }
+  .main .our-instagram .insta-images {
     display: flex;
-    align-items: center; }
-    .main .our-instagram .insta-images .our-insta p {
-      margin-bottom: 0; }
-    .main .our-instagram .insta-images .our-insta .read-more {
-      margin-left: 40px; }
-.main .new-positions .new-pos-images {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px; }
-  .main .new-positions .new-pos-images .new-pos-img-holder {
-    margin: 0px 14px; }
-    .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-name {
-      font-size: 22px;
-      line-height: 34px;
-      font-family: "Roboto Mono", monospace;
-      font-weight: 700; }
-    .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price {
-      font-size: 22px;
-      line-height: 51px;
-      color: #D5B584;
-      font-family: "Roboto Mono", monospace;
-      font-weight: 700;
-      position: relative; }
-      .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price::after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        height: 2px;
-        width: 155px;
-        background-image: url(../images/gold-line.png);
-        transform: translateX(-50%); }
-      .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price .price {
-        font-size: 36px;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+    .main .our-instagram .insta-images .insta-img-holder {
+      margin: 0px 14px; }
+    .main .our-instagram .insta-images .side {
+      width: 25%;
+      background: #260a00;
+      height: 90px; }
+    .main .our-instagram .insta-images .our-insta {
+      display: flex;
+      align-items: center; }
+      .main .our-instagram .insta-images .our-insta p {
+        margin-bottom: 0; }
+      .main .our-instagram .insta-images .our-insta .read-more {
+        margin-left: 40px; }
+  .main .new-positions .new-pos-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+    .main .new-positions .new-pos-images .new-pos-img-holder {
+      margin: 0px 14px; }
+      .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-name {
+        font-size: 22px;
+        line-height: 34px;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 700; }
+      .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price {
+        font-size: 22px;
         line-height: 51px;
         color: #D5B584;
         font-family: "Roboto Mono", monospace;
         font-weight: 700;
-        margin-right: 1rem; }
-.main .new-positions .read-more {
-  width: 330px; }
-  .main .new-positions .read-more .arrow {
-    margin-left: 1rem; }
-.main .new-guest .bordered {
-  border: 1px solid #260A00;
-  padding: 2rem 1rem; }
-.main .new-guest .new-guest-img {
-  position: relative;
-  width: 22vw; }
-  .main .new-guest .new-guest-img .discount {
-    position: absolute;
-    width: 7vw;
-    height: 7vw;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    background: #D5B584;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        position: relative; }
+        .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          height: 2px;
+          width: 155px;
+          background-image: url(../images/gold-line.png);
+          transform: translateX(-50%); }
+        .main .new-positions .new-pos-images .new-pos-img-holder .new-pos-description .cake-price .price {
+          font-size: 36px;
+          line-height: 51px;
+          color: #D5B584;
+          font-family: "Roboto Mono", monospace;
+          font-weight: 700;
+          margin-right: 1rem; }
+  .main .new-positions .read-more {
+    width: 330px; }
+    .main .new-positions .read-more .arrow {
+      margin-left: 1rem; }
+  .main .new-guest .bordered {
+    border: 1px solid #260a00;
+    padding: 2rem 1rem; }
+  .main .new-guest .new-guest-img {
+    position: relative;
+    width: 22vw; }
+    .main .new-guest .new-guest-img .discount {
+      position: absolute;
+      width: 7vw;
+      height: 7vw;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
+      background: #D5B584;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 72px;
+      line-height: 84px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 700;
+      color: #fff; }
+  .main .new-guest .new-guest-text {
+    font-size: 18px;
+    line-height: 30px; }
+  .main .new-guest .timer {
     font-size: 72px;
-    line-height: 84px;
+    line-height: 101px;
     font-family: "Roboto Mono", monospace;
-    font-weight: 700;
-    color: #fff; }
-.main .new-guest .new-guest-text {
-  font-size: 18px;
-  line-height: 30px; }
-.main .new-guest .timer {
-  font-size: 72px;
-  line-height: 101px;
-  font-family: "Roboto Mono", monospace;
-  color: #D5B584; }
+    color: #D5B584; }
+  .main .review-book .review-box {
+    padding: 1rem;
+    border: 1px solid #D5B584;
+    border-radius: 20px;
+    background: #fff; }
+    .main .review-book .review-box .reviewer {
+      margin-bottom: 9px;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: "Roboto Mono", monospace; }
+  .main .review-book .review-form {
+    position: relative; }
+    .main .review-book .review-form::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -10%;
+      transform: translateY(-50%);
+      background: #D5B584;
+      width: 145%;
+      height: 115%;
+      z-index: -1; }
+    .main .review-book .review-form form input {
+      padding: 0;
+      width: 100%;
+      padding-bottom: 1rem;
+      font-size: 16px;
+      line-height: 19px;
+      border: none;
+      background: #D5B584;
+      border-bottom: 2px solid #fff;
+      font-family: "Roboto Mono", monospace; }
+      .main .review-book .review-form form input::placeholder {
+        color: #fff; }
+    .main .review-book .review-form form label {
+      font-family: "Roboto Mono", monospace;
+      display: block;
+      font-size: 16px;
+      line-height: 19px; }
+    .main .review-book .review-form form textarea {
+      width: 100%;
+      background: #efdaba;
+      border: 2px solid #fff;
+      resize: none;
+      color: #fff;
+      font-size: 16px;
+      line-height: 19px; }
+    .main .review-book .review-form form .btn {
+      height: 50px;
+      padding: 2px 20px; }
+      .main .review-book .review-form form .btn.read-more::before {
+        background: #000; }
+      .main .review-book .review-form form .btn.read-more::after {
+        background: #000; }
+  .main .latest-news .tab {
+    display: flex;
+    overflow: hidden;
+    justify-content: center; }
+    .main .latest-news .tab button {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #260a00;
+      background-color: inherit;
+      position: relative;
+      border: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s; }
+      .main .latest-news .tab button::after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        height: 2px;
+        width: 85px;
+        background-image: url(../images/gold-line.png);
+        transform: translateX(-50%);
+        opacity: 0; }
+      .main .latest-news .tab button:hover {
+        color: #D5B584; }
+        .main .latest-news .tab button:hover::after {
+          opacity: 1; }
+      .main .latest-news .tab button.active {
+        color: #D5B584; }
+        .main .latest-news .tab button.active::after {
+          opacity: 1; }
+  .main .latest-news .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none; }
+    .main .latest-news .tabcontent .poster-images {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px; }
+      .main .latest-news .tabcontent .poster-images .poster-img-holder {
+        position: relative;
+        margin: 0px 14px; }
+        .main .latest-news .tabcontent .poster-images .poster-img-holder::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, rgba(38, 10, 0, 0) 0%, rgba(38, 10, 0, 0.7) 60.43%); }
+        .main .latest-news .tabcontent .poster-images .poster-img-holder .poster-description {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          padding: 1rem;
+          z-index: 2; }
+          .main .latest-news .tabcontent .poster-images .poster-img-holder .poster-description .poster-title {
+            font-size: 22px;
+            line-height: 51px;
+            color: #D5B584;
+            font-family: "Roboto Mono", monospace;
+            font-weight: 700;
+            position: relative; }
+            .main .latest-news .tabcontent .poster-images .poster-img-holder .poster-description .poster-title::after {
+              content: "";
+              position: absolute;
+              bottom: 0px;
+              left: 50%;
+              height: 2px;
+              width: 100%;
+              background-image: url(../images/gold-line.png);
+              transform: translateX(-50%); }
+          .main .latest-news .tabcontent .poster-images .poster-img-holder .poster-description .poster-subtitle {
+            font-family: "Roboto Mono", monospace;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            height: 68px; }
 
 /*# sourceMappingURL=all.css.map */

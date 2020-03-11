@@ -1,4 +1,5 @@
 .main {
+    overflow: hidden;
     .dots {
         position: absolute;
         width: 20vw;
@@ -22,6 +23,21 @@
             right: 0;
             top: 10%;
         }
+        &-5 {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-6 {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-7 {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
     .text-center {
         text-align: center;
@@ -29,8 +45,14 @@
     .align-center {
         align-items: center;
     }
+    .white {
+        color: #fff;
+    }
     .mb-0 {
         margin-bottom: 0;
+    }
+    .mb-1 {
+        margin-bottom: 1rem;
     }
     .mb-2 {
         margin-bottom: 2rem;
@@ -52,7 +74,7 @@
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.1em;
-        border: 2px solid #000;
+        border: 2px solid $text-color;
         width: 200px;
         height: 45px;
         padding: 10px 20px;
@@ -81,10 +103,10 @@
         }
         &:hover {
             &:after {
-                width: 100px;
+                width: 50%;
             }
             &:before {
-                height: 65px;
+                height: 100%;
             }
         }
     }
@@ -143,7 +165,7 @@
                     height: 0;
                     border-top: 15px solid transparent;
                     border-bottom: 15px solid transparent;
-                    border-left: 25px solid #000;
+                    border-left: 25px solid $text-color;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -180,7 +202,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background: #d5b584;
+                background: $gold-color;
                 width: 167%;
                 height: 135%;
                 z-index: -1;
@@ -283,7 +305,7 @@
     }
     .new-guest {
         .bordered {
-            border: 1px solid #260A00;
+            border: 1px solid #260a00;
             padding: 2rem 1rem;
         }
         .new-guest-img {
@@ -314,6 +336,178 @@
             line-height: 101px;
             font-family: $headings-font;
             color: $gold-color;
+        }
+    }
+    .review-book {
+        .review-box {
+            padding: 1rem;
+            border: 1px solid $gold-color;
+            border-radius: 20px;
+            background: #fff;
+            .reviewer {
+                margin-bottom: 9px;
+                font-size: 18px;
+                line-height: 21px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                font-family: $headings-font;
+            }
+        }
+        .review-form {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -10%;
+                transform: translateY(-50%);
+                background: $gold-color;
+                width: 145%;
+                height: 115%;
+                z-index: -1;
+            }
+            form {
+                input {
+                    padding: 0;
+                    width: 100%;
+                    padding-bottom: 1rem;
+                    font-size: 16px;
+                    line-height: 19px;
+                    border: none;
+                    background: $gold-color;
+                    border-bottom: 2px solid #fff;
+                    font-family: $headings-font;
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+                label {
+                    font-family: $headings-font;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                textarea {
+                    width: 100%;
+                    background: #efdaba;
+                    border: 2px solid #fff;
+                    resize: none;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                .btn {
+                    height: 50px;
+                    padding: 2px 20px;
+                    &.read-more {
+                        &::before {
+                            background: $text-color;
+                        }
+                        &::after {
+                            background: $text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .latest-news {
+        .tab {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            button {
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #260a00;
+                background-color: inherit;
+                position: relative;
+                border: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    height: 2px;
+                    width: 85px;
+                    background-image: url(../images/gold-line.png);
+                    transform: translateX(-50%);
+                    opacity: 0;
+                }
+                &:hover {
+                    color: $gold-color;
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+                &.active {
+                    color: $gold-color;
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+            .poster-images {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                .poster-img-holder {
+                    position: relative;
+                    margin: 0px 14px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(180deg, rgba(38, 10, 0, 0) 0%, rgba(38, 10, 0, 0.7) 60.43%);
+                    }
+                    .poster-description {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        padding: 1rem;
+                        z-index: 2;
+                        .poster-title {
+                            font-size: 22px;
+                            line-height: 51px;
+                            color: $gold-color;
+                            font-family: $headings-font;
+                            font-weight: 700;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                bottom: 0px;
+                                left: 50%;
+                                height: 2px;
+                                width: 100%;
+                                background-image: url(../images/gold-line.png);
+                                transform: translateX(-50%);
+                            }
+                        }
+                        .poster-subtitle {
+                            font-family: $headings-font;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 34px;
+                            height: 68px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

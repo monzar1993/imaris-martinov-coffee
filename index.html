@@ -156,6 +156,12 @@
             </section>
             <section class="new-guest">
                 <div class="container">
+                    <div class="dots dots-5">
+                        <img src="images/dots.svg" alt="dots">
+                    </div>
+                    <div class="dots dots-6">
+                        <img src="images/dots.svg" alt="dots">
+                    </div>
                     <div class="row bordered">
                         <div class="col col-5 align-center">
                             <div class="new-guest-img">
@@ -171,6 +177,99 @@
                             <a class="read-more" href="#">ПОДРОБНЕЕ<img class="arrow" src="images/arrow_right.png"
                                 alt="arrow"></a>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="review-book">
+                <div class="container">
+                    <div class="dots dots-7">
+                        <img src="images/dots.svg" alt="dots">
+                    </div>
+                    <div class="row">
+                        <div class="col col-7">
+                            <h3>Книга отзывов</h3>
+                            <div class="review-box mb-2">
+                                <p class="bold reviewer">Алина</p>
+                                <p class="mb-1 review-text">Регулярно ходим сюда с подружками, чтобы поболтать в приятной атмосфере и побаловать себя десертами. Ради чизкейка даже диету не жалко нарушить.</p>
+                            </div>
+                            <div class="review-box mb-2">
+                                <p class="bold reviewer">ОКСАНА</p>
+                                <p class="mb-1 review-text">Очень любим кафе Martinov’s за душевность и невероятный кофе. Приходим сюда, как вдвоем с мужем, так и всей большой семьей. Спасибо, что вы есть!</p>
+                            </div>
+                            <div class="review-box">
+                                <p class="bold reviewer">ЛЮДМИЛА</p>
+                                <p class="mb-1 review-text">Всем рекомендую кафе Martinov’s, особенно авторские тортики Янины. Вкусные настолько, что пальчики оближешь. На все праздники сладкое заказываю только здесь.</p>
+                            </div>
+                        </div>
+                        <div class="col col-5">
+                            <div class="review-form">
+                                <h3 class="white">Оставьте отзыв</h3>
+                                <form>
+                                    <input class="bold white mb-2" type="text" placeholder="Ваше имя*">
+                                    <input class="bold white mb-2" type="email" placeholder="Ваш email*">
+                                    <label class="mb-1 bold white" for="textarea">Отзыв*</label>
+                                    <textarea class="mb-2" cols="30" rows="10"></textarea>
+                                    <button class="read-more btn">ОТПРАВИТЬ<img class="arrow" src="images/arrow_right.png"
+                                        alt="arrow"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="latest-news">
+                <div class="container">
+                    <h3 class="text-center">Последние новости</h3>
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openTab(event, 'poster')">АФИША</button>
+                        <button class="tablinks" onclick="openTab(event, 'articles')">СТАТЬИ</button>
+                        <button class="tablinks" onclick="openTab(event, 'promotions')">АКЦИИ</button>
+                    </div>
+                    <div id="poster" class="tabcontent" style="display: block;">
+                        <div class="poster-images">
+                            <div class="poster-img-holder">
+                                <img src="images/poster-1.png" alt="poster">
+                                <div class="poster-description">
+                                    <p class="mb-1 poster-title">АФИША</p>
+                                    <p class="mb-1 poster-subtitle white">Новый тарт с фруктовой начинкой уже ждет тебя</p>
+                                    <p class="poster-text mb-0 white">Вас ждет типичный для французской кухни тарт из особого песочного теста и летними ягодами</p>
+                                </div>
+                            </div>
+                            <div class="poster-img-holder">
+                                <img src="images/poster-2.png" alt="poster">
+                                <div class="poster-description">
+                                    <p class="mb-1 poster-title">АФИША</p>
+                                    <p class="mb-1 poster-subtitle white">Горячий чай или глинтвейн?</p>
+                                    <p class="poster-text mb-0 white">Наконец наступила погода для чашечки горячего чая, глинтвейна и теплого пледика</p>
+                                </div>
+                            </div>
+                            <div class="poster-img-holder">
+                                <img src="images/poster-3.png" alt="poster">
+                                <div class="poster-description">
+                                    <p class="mb-1 poster-title">АФИША</p>
+                                    <p class="mb-1 poster-subtitle white">Сезон витаминов открыто</p>
+                                    <p class="poster-text mb-0 white">Смузи манго-ананас, шпинат-маракуйя, черника-смородина, малина-сельдерей</p>
+                                </div>
+                            </div>
+                            <div class="poster-img-holder">
+                                <img src="images/poster-4.png" alt="poster">
+                                <div class="poster-description">
+                                    <p class="mb-1 poster-title">АФИША</p>
+                                    <p class="mb-1 poster-subtitle white">Оргазизация сладкого стола</p>
+                                    <p class="poster-text mb-0 white">Смузи манго-ананас, шпинат-маракуйя, черника-смородина, малина-сельдерей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="articles" class="tabcontent">
+                        <h3>articles</h3>
+                        <p>articles</p>
+                    </div>
+
+                    <div id="promotions" class="tabcontent">
+                        <h3>promotions</h3>
+                        <p>promotions</p>
                     </div>
                 </div>
             </section>
