@@ -363,7 +363,13 @@ header {
     background-color: #fff;
     overflow: hidden;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    height: 70px;
+    overflow: visible; }
+    @media screen and (max-width: 1024px) {
+      header .topnav {
+        height: unset;
+        overflow: hidden; } }
     header .topnav .nav-link {
       padding: 20px 30px;
       font-size: 16px;
