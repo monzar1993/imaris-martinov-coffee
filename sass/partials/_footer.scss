@@ -1,9 +1,30 @@
 footer {
     background: url(../images/footer-line.png) no-repeat top;
+    .logo {
+        img {
+            @media screen and (max-width: 1024px) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
     .site-map {
         display: flex;
         flex-direction: column;
         max-width: 240px;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        &.social-media,
+        &.address {
+            @media screen and (max-width: 1024px) {
+                display: flex;
+            }
+            .social-media-links {
+                @media screen and (max-width: 1024px) {
+                    justify-content: space-evenly;
+                }
+            }
+        }
         a {
             font-family: $headings-font;
             color: $heading-color;
@@ -35,9 +56,32 @@ footer {
             font-size: 12px;
             line-height: 14px;
         }
+        &.desktop {
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+        &.mobile {
+            @media screen and (min-width: 1024px) {
+                display: none;
+            }
+        }
     }
     .imaris-logo {
         width: 30%;
         object-fit: contain;
+    }
+    .footer-info {
+        @media screen and (max-width: 1024px) {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .imaris-info {
+        @media screen and (max-width: 1024px) {
+            justify-content: center;
+            margin-top: 2rem;
+        }
     }
 }
