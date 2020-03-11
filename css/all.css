@@ -340,6 +340,137 @@ section {
 .mx-auto {
   margin: 0 auto; }
 
+header {
+  width: 100%;
+  display: block;
+  position: relative;
+  position: fixed;
+  z-index: 100;
+  /* Add a black background color to the top navigation */
+  /* Style the links inside the navigation bar */
+  /* Add an active class to highlight the current page */
+  /* Hide the link that should open and close the topnav on small screens */
+  /* Dropdown container - needed to position the dropdown content */
+  /* Style the dropdown button to fit inside the topnav */
+  /* Style the dropdown content (hidden by default) */
+  /* Style the links inside the dropdown */
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  /* Add a grey background to dropdown links on hover */
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */ }
+  header .topnav {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; }
+    header .topnav .nav-link {
+      padding: 20px 30px;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.1em;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 700;
+      color: #260a00; }
+      header .topnav .nav-link .phone-icon {
+        width: 15px; }
+      header .topnav .nav-link .search-icon {
+        width: 20px; }
+      @media screen and (max-width: 1440px) {
+        header .topnav .nav-link {
+          padding: 20px 10px; } }
+    @media screen and (max-width: 768px) {
+      header .topnav .hide-link {
+        display: none; } }
+  header .topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px; }
+  header .active {
+    background-color: transparent;
+    color: #D5B584; }
+  header .topnav .icon {
+    display: none;
+    padding: 10px 20px;
+    font-size: 30px; }
+  header .dropdown {
+    float: left;
+    overflow: hidden;
+    cursor: pointer; }
+    @media screen and (max-width: 1024px) {
+      header .dropdown {
+        display: none; } }
+  header .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #D5B584;
+    padding: 20px 10px;
+    font-family: inherit;
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    font-family: "Roboto Mono", monospace; }
+  header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  header .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    color: #260a00; }
+  header .topnav a:hover,
+  header .dropdown:hover .dropbtn {
+    background-color: #D5B584;
+    color: #fff; }
+  header .dropdown-content a:hover {
+    background-color: #fff;
+    color: #D5B584; }
+  header .dropdown:hover .dropdown-content {
+    display: block; }
+  @media screen and (max-width: 1024px) {
+    header .topnav a:not(:first-child),
+    header .dropdown .dropbtn {
+      display: none; }
+    header .topnav a.icon {
+      float: right;
+      display: block; } }
+  @media screen and (max-width: 1024px) {
+    header .topnav.responsive {
+      position: relative; }
+    header .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    header .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left; }
+    header .topnav.responsive .dropdown {
+      float: none; }
+    header .topnav.responsive .dropdown-content {
+      position: relative; }
+    header .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left; } }
+
 .main {
   overflow: hidden; }
   .main .dots {
