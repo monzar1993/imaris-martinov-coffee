@@ -11,10 +11,31 @@
     <title>Martinov Coffee</title>
 </head>
 
-<body>
+<body onload="time()">
     <div class="martynov-coffee">
         <!-- <header>
-            <img src="images/logo.png" alt="logo">
+
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="home-link active"><img src="images/logo.png" alt="logo"></a>
+                <a href="#about-us">О нас</a>
+                <a href="#menu">Меню</a>
+                <a href="#news">Новости</a>
+                <a href="#ask-me">Вопрос-ответ</a>
+                <a href="#contact">Контакты</a>
+                <a href="#number">+38 (097) 362-46-96</a>
+                <a href="#language">RU</a>
+                <div class="dropdown">
+                    <button class="dropbtn bold">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         </header> -->
         <div class="main">
             <section class="main-section">
@@ -45,9 +66,9 @@
                             <div class="dots dots-2">
                                 <img src="images/dots.svg" alt="dots">
                             </div>
-                            <div class="dots dots-3">
+                            <!-- <div class="dots dots-3">
                                 <img src="images/dots.svg" alt="dots">
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col col-5">
                             <div class="main-slider">
@@ -112,7 +133,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="insta-images">
+                <div class="insta-connect">
                     <div class="side">
                         <img src="images/gold-dots.png" alt="dots">
                     </div>
@@ -193,7 +214,7 @@
                             <h3>Акция! Подарки новым гостям!</h3>
                             <p class="new-guest-text mb-2">Мы всегда рады видеть новые лица в кафе и стремимся поделиться нашими десертами со всеми хорошими людьми. Именно поэтому мы дарим скидку 10% на кондитерские изделия всем новым клиентам, которые оформят заказ онлайн.</p>
                             <p class="new-guest-text bold">Поспешите! До конца акции осталось всего:</p>
-                            <p class="timer bold">03:22:43:15</p>
+                            <p><span id="t" class="timer bold"></span></p>
                             <a class="read-more" href="#">ПОДРОБНЕЕ<img class="arrow" src="images/arrow_right.png"
                                     alt="arrow"></a>
                         </div>
