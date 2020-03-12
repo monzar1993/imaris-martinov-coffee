@@ -13,6 +13,7 @@ header {
         height: 70px;
         overflow: visible;
         @media screen and (max-width: 1024px) {
+            justify-content: center;
             height: unset;
             overflow: hidden;
         }
@@ -32,9 +33,42 @@ header {
                 padding: 20px 10px;
             }
         }
-        .hide-link {
-            @media screen and (max-width: 768px) {
-                display: none;
+        .home-link {
+            img {
+                padding: 5px;
+                transition: .3s;
+                @media screen and (max-width: 1024px) {
+                    width: 45px;
+                }
+            }
+        }
+        &.responsive {
+            .home-link {
+                img {
+                    @media screen and (max-width: 1024px) {
+                        width: 160px;
+                        padding-top: 5px;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        .mobile-search {
+            display: none;
+            @media screen and (max-width: 1024px) {
+                display: flex;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .d-block {
+                display: block;
+            }
+            .nav-link {
+                .phone-icon,
+                .search-icon {
+                    width: 25px;
+                }
             }
         }
     }
@@ -57,6 +91,8 @@ header {
         display: none;
         padding: 10px 20px;
         font-size: 30px;
+        position: absolute;
+        left: 0;
     }
     /* Dropdown container - needed to position the dropdown content */
     .dropdown {
@@ -136,13 +172,13 @@ header {
         }
         .topnav.responsive a.icon {
             position: absolute;
-            right: 0;
+            left: 0;
             top: 0;
         }
         .topnav.responsive a {
             float: none;
             display: block;
-            text-align: left;
+            text-align: center;
         }
         .topnav.responsive .dropdown {
             float: none;
@@ -154,6 +190,11 @@ header {
             display: block;
             width: 100%;
             text-align: left;
+        }
+    }
+    .hide-link {
+        @media screen and (max-width: 1024px) {
+            display: none !important;
         }
     }
 }
